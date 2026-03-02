@@ -68,14 +68,19 @@
 </header>
 
 
-<!-- PAGE INTRO -->
-<section class="section bg-light">
+<!-- PAGE HERO -->
+<section class="page-hero">
   <div class="container">
-    <div class="section-title reveal">
-      <h2>Our Workspace Solutions</h2>
+    <div class="page-hero-content reveal">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Services</span>
+      </div>
+      <h1>Workspace Plans & Pricing</h1>
       <p>
-        Premium virtual office and coworking services available in Vadodara (Nazarbaug Palace) 
-        and Ahmedabad (Naranpura). Choose the plan that best suits your business needs.
+        Premium virtual office and coworking services in Vadodara and Ahmedabad.
+        Transparent pricing, zero hidden fees, and complete documentation support included.
       </p>
     </div>
   </div>
@@ -205,9 +210,9 @@
 <!-- CTA -->
 <section class="cta">
   <div class="container cta-box reveal">
-    <h2>Need Help Choosing the Right Plan?</h2>
-    <p>Contact our team and we will guide you with the best workspace solution.</p>
-    <a href="contact.html" class="btn-primary">Contact Now</a>
+    <h2>Not Sure Which Plan is Right for You?</h2>
+    <p>Our team will help you pick the perfect plan based on your business type, location, and budget. Get expert advice at no cost.</p>
+    <a href="contact.html" class="btn-primary">Talk to Our Team</a>
   </div>
 </section>
 
@@ -251,47 +256,26 @@
 
 <!-- FLOATING CONTACT ICONS -->
 <div class="floating-contact">
-  
+
   <!-- WhatsApp -->
-  <a href="https://wa.me/919510288972" target="_blank" class="float-btn whatsapp">
+  <a href="https://wa.me/919510288972" target="_blank" rel="noopener noreferrer"
+     class="float-btn whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- Call -->
-  <a href="tel:+918849567124" class="float-btn call">
+  <a href="tel:+918849567124" class="float-btn call"
+     title="Call Us" aria-label="Call P3 Workspaces">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Map -->
-  <a href="https://maps.app.goo.gl/c2seCTbQxUYWKmg98" 
-     target="_blank" class="float-btn map">
+  <a href="https://maps.app.goo.gl/c2seCTbQxUYWKmg98" target="_blank" rel="noopener noreferrer"
+     class="float-btn map" title="Find Us on Google Maps" aria-label="Find us on Google Maps">
     <i class="fa-solid fa-location-dot"></i>
   </a>
 </div>
 
 <script src="assets/js/main.js"></script>
-  <script>
-    const reveals = document.querySelectorAll(
-      ".reveal, .reveal-fast, .reveal-left, .reveal-right, .reveal-zoom"
-    );
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-          } else {
-            entry.target.classList.remove("active");
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: "0px 0px -80px 0px"
-      }
-    );
-
-    reveals.forEach((reveal) => observer.observe(reveal));
-  </script>
 </body>
 </html>

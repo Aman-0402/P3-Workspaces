@@ -176,7 +176,7 @@ ul {
   color: #fff;
   overflow: hidden;
 
-  background-image: url("assets/images/gallery1.jpeg");
+  background-image: url("assets/images/workspace/hp67mb.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -316,7 +316,7 @@ ul {
    SECTIONS
 ================================ */
 .section {
-  padding: 70px;
+  padding: 80px 0;
 }
 
 .bg-light {
@@ -325,28 +325,24 @@ ul {
 
 .section-title {
   text-align: center;
-  margin-bottom: 25px;
-}
-
-.section-top{
-  text-align: center;
-  background-image: linear-gradient(white, aqua, lightpink);
+  margin-bottom: 40px;
 }
 
 .section-title h2 {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 800;
   color: #0f172a;
   letter-spacing: -0.5px;
 }
 
 .section-title p {
-  margin-top: 10px;
+  margin-top: 12px;
   color: #475569;
-  font-size: 15px;
-  max-width: 100%;
+  font-size: 16px;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
 }
 
 /* ================================
@@ -769,13 +765,14 @@ ul {
     position: absolute;
     top: 75px;
     right: 0;
-    background: linear-gradient(180deg, #0b1220, #0f172a); /* UPDATED SAME AS FOOTER */
+    background: #ffffff;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     width: 100%;
     display: none;
     padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12); /* UPDATED */
-    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.35); /* UPDATED */
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
   }
 
   .navbar ul {
@@ -1140,8 +1137,7 @@ ul {
 ========================= */
 
 .gallery-wall {
-  padding: 90px 0;
-  background: #f4f6f9;
+  padding: 10px 0 0;
 }
 
 .frame-grid {
@@ -1152,9 +1148,9 @@ ul {
 .frame-item {
   break-inside: avoid;
   margin-bottom: 28px;
-  background-image: linear-gradient(orange, aqua, brown);
+  background: linear-gradient(135deg, #0f2c59 0%, #1e40af 50%, #3b82f6 100%);
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow:
       0 4px 12px rgba(0,0,0,0.08),
       0 10px 28px rgba(0,0,0,0.05);
@@ -1172,8 +1168,9 @@ ul {
   width: 100%;
   height: 100%;
   display: block;
-  border: 8px solid lemonchiffon;
-  box-shadow: inset 0 0 0 3px #ffffff;
+  border: 6px solid rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.3);
 }
 
 /* Responsive */
@@ -1185,18 +1182,6 @@ ul {
 }
 @media(max-width:500px){
   .frame-grid { column-count: 1; }
-}
-
-/* ==============================
-   SECTION TITLE
-================================= */
-
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 50px;
-    color: #1f2937;
 }
 
 /* ==============================
@@ -1214,20 +1199,21 @@ ul {
 ================================= */
 
 .benefit-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.96);
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 28px rgba(0,0,0,0.05);
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    transition: 0.3s ease;
-    border: 1px solid #e5e7eb;
+    transition: 0.35s ease;
+    border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 12px 30px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+    box-shadow: 0px 18px 42px rgba(0,0,0,0.09);
+    border-color: rgba(30, 64, 175, 0.18);
 }
 
 /* ==============================
@@ -1235,10 +1221,10 @@ ul {
 ================================= */
 
 .icon {
-    width: 50px;
-    height: 50px;
-    background: #e0e7ff;
-    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background: rgba(30, 64, 175, 0.1);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1246,8 +1232,8 @@ ul {
 }
 
 .icon i {
-    font-size: 18px;
-    color: #2563eb;
+    font-size: 20px;
+    color: #1e40af;
 }
 
 /* ==============================
@@ -1255,21 +1241,21 @@ ul {
 ================================= */
 
 .content h3 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-    font-weight: 700;
-    color: #111827;
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
 }
 
 .content p {
     margin: 0;
-    font-size: 15px;
-    color: #6b7280;
-    line-height: 1.6;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.65;
 }
-.benefits-section{
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+.benefits-section {
+  padding: 80px 0;
 }
 
 /* ==============================
@@ -1619,3 +1605,205 @@ ul {
   }
 
 }
+
+/* ================================
+   STORY BODY TEXT
+================================ */
+
+.story-body {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.story-body p {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.85;
+  margin-bottom: 22px;
+}
+
+.story-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ================================
+   LOCATION CARD TAGLINE
+================================ */
+
+.card-tagline {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #1e40af;
+  font-size: 14px;
+}
+
+/* ================================
+   PAGE HERO BANNER (INNER PAGES)
+================================ */
+
+.page-hero {
+  background: linear-gradient(135deg, #0b1f3f 0%, #1e3a8a 55%, #0f2c59 100%);
+  color: white;
+  padding: 90px 0 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: rgba(59, 130, 246, 0.15);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-size: 44px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.page-hero-breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+
+.page-hero-breadcrumb a {
+  color: rgba(255,255,255,0.75);
+  transition: 0.2s;
+}
+
+.page-hero-breadcrumb a:hover {
+  color: #fff;
+}
+
+.page-hero-breadcrumb span {
+  color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 70px 20px 55px;
+  }
+
+  .page-hero h1 {
+    font-size: 30px;
+  }
+
+  .page-hero p {
+    font-size: 15px;
+  }
+}
+
+/* ================================
+   STATS BAR
+================================ */
+
+.stats-bar {
+  background: linear-gradient(135deg, #0f2c59 0%, #1e40af 100%);
+  padding: 40px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-item {
+  border-right: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 20px;
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-item h3 {
+  font-size: 38px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-item p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding: 18px 10px;
+  }
+
+  .stat-item:nth-child(odd) {
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .stat-item h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

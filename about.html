@@ -82,14 +82,19 @@
 </header>
 
 
-<!-- HERO / INTRO -->
-<section class="section">
+<!-- PAGE HERO -->
+<section class="page-hero">
   <div class="container">
-    <div class="section-title reveal">
-      <h2>About P3 Workspaces</h2>
+    <div class="page-hero-content reveal">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>About Us</span>
+      </div>
+      <h1>About P3 Workspaces</h1>
       <p>
-        A premium multi-location workspace provider offering professional virtual office 
-        and coworking solutions in Vadodara and Ahmedabad.
+        A premium multi-location workspace provider offering professional virtual office
+        and coworking solutions in Vadodara and Ahmedabad — built on trust, compliance, and community.
       </p>
     </div>
   </div>
@@ -142,22 +147,34 @@
   <div class="container">
     <div class="section-title reveal">
       <h2>Our Story</h2>
+      <p>How P3 Workspaces grew from an idea into Gujarat's trusted workspace partner.</p>
+    </div>
+    <div class="story-body reveal-fast">
       <p>
-        P3 Workspaces was founded to provide entrepreneurs, startups, and growing enterprises 
-        with reliable, legally compliant, and premium business infrastructure. We understand 
-        the importance of credibility, flexibility, and professional presence in today's business environment.
+        P3 Workspaces was founded with a clear purpose: to give entrepreneurs, freelancers,
+        and growing businesses access to a credible, professionally managed address — without
+        the overhead of a traditional office lease. We saw that too many promising startups
+        were struggling with GST registration, bank verifications, and MCA compliance simply
+        because they lacked a recognized business address.
       </p>
-      <p style="margin-top:20px;">
-        With two prime locations - the historic Nazarbaug Palace in Vadodara and a 
-        corporate-ready address in Naranpura, Ahmedabad - we help businesses establish 
-        strong identities while ensuring smooth documentation and compliance support.
+      <p>
+        We solved that. Starting from the iconic Nazarbaug Palace in the heart of Vadodara,
+        we built a workspace that blends heritage prestige with modern business infrastructure.
+        Every plan comes with complete documentation support — lease agreements, NOCs, notary
+        stamps — delivered within 48 hours.
+      </p>
+      <p>
+        Today, with a second location in Naranpura, Ahmedabad, P3 Workspaces serves 100+
+        clients across Gujarat, from solo consultants to registered companies. Our mission
+        remains the same: make professional workspace accessible, compliant, and affordable
+        for every business at every stage.
       </p>
     </div>
   </div>
 </section>
 
 
-<!-- OUR LOCATIONS (IMPROVED PREMIUM VERSION) -->
+<!-- OUR LOCATIONS -->
 <section class="section bg-light">
   <div class="container">
 
@@ -173,13 +190,11 @@
         <i class="fa-solid fa-building-columns"></i>
         <h3>Vadodara - Nazarbaug Palace</h3>
         <p>
-          2nd Floor, Nazar Baug Palace, 2066, Mandvi Cir,  
-          Opp. Jamnabai Hospital, Bajwada,  
+          2nd Floor, Nazar Baug Palace, 2066, Mandvi Cir,
+          Opp. Jamnabai Hospital, Bajwada,
           Vadodara, Gujarat 390001
         </p>
-        <p style="margin-top:12px; font-weight:600; color:#1e40af;">
-          Heritage charm. Central connectivity. Premium identity.
-        </p>
+        <p class="card-tagline">Heritage charm. Central connectivity. Premium identity.</p>
       </div>
 
       <!-- AHMEDABAD -->
@@ -187,13 +202,11 @@
         <i class="fa-solid fa-city"></i>
         <h3>Ahmedabad - Naranpura</h3>
         <p>
-          CORPHUB RENTALS LLP, B-Wing, 6th Floor,  
-          BD Patel House, Naranpura,  
+          CORPHUB RENTALS LLP, B-Wing, 6th Floor,
+          BD Patel House, Naranpura,
           Ahmedabad 380009
         </p>
-        <p style="margin-top:12px; font-weight:600; color:#1e40af;">
-          Corporate environment. Growth-ready ecosystem.
-        </p>
+        <p class="card-tagline">Corporate environment. Growth-ready ecosystem.</p>
       </div>
 
     </div>
@@ -205,11 +218,12 @@
 <!-- CTA -->
 <section class="cta">
   <div class="container cta-box reveal">
-    <h2>Experience a Professional Workspace Environment</h2>
+    <h2>Come See the Space in Person</h2>
     <p>
-      Visit P3 Workspaces in Vadodara or Ahmedabad and elevate your business presence today.
+      Book a free visit to P3 Workspaces in Vadodara or Ahmedabad. Meet the team,
+      explore the space, and find the plan that fits your business perfectly.
     </p>
-    <a href="contact.html" class="btn-primary">Book a Visit</a>
+    <a href="contact.html" class="btn-primary">Book a Free Visit</a>
   </div>
 </section>
 
@@ -252,47 +266,26 @@
 </footer>
 <!-- FLOATING CONTACT ICONS -->
 <div class="floating-contact">
-  
+
   <!-- WhatsApp -->
-  <a href="https://wa.me/919510288972" target="_blank" class="float-btn whatsapp">
+  <a href="https://wa.me/919510288972" target="_blank" rel="noopener noreferrer"
+     class="float-btn whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- Call -->
-  <a href="tel:+918849567124" class="float-btn call">
+  <a href="tel:+918849567124" class="float-btn call"
+     title="Call Us" aria-label="Call P3 Workspaces">
     <i class="fa-solid fa-phone"></i>
   </a>
 
   <!-- Map -->
-  <a href="https://maps.app.goo.gl/c2seCTbQxUYWKmg98" 
-     target="_blank" class="float-btn map">
+  <a href="https://maps.app.goo.gl/c2seCTbQxUYWKmg98" target="_blank" rel="noopener noreferrer"
+     class="float-btn map" title="Find Us on Google Maps" aria-label="Find us on Google Maps">
     <i class="fa-solid fa-location-dot"></i>
   </a>
 </div>
 
 <script src="assets/js/main.js"></script>
-<script>
-        const reveals = document.querySelectorAll(
-        ".reveal, .reveal-fast, .reveal-left, .reveal-right, .reveal-zoom"
-        );
-
-        const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-            } else {
-                entry.target.classList.remove("active");
-            }
-            });
-        },
-        {
-            threshold: 0.15,
-            rootMargin: "0px 0px -80px 0px"
-        }
-        );
-
-        reveals.forEach((reveal) => observer.observe(reveal));
-</script>
 </body>
 </html>
